@@ -1,0 +1,227 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 45%;
+    height: 85%;
+    padding: 3vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 4vw;
+
+    border-radius: 1vw;
+    border: 0.1vw solid white;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    font-size: 2vw;
+    letter-spacing: 0.1vw;
+    line-height: 4vw;
+}
+
+#first-number, #second-number {
+    width: 20vw;
+    height: 3vw;
+
+    border-radius: 0.5vw; 
+}
+
+#answer-text {
+    width: 20vw;
+    height: 3vw;
+
+    margin-top: -0.5vw;
+
+    border-radius: 0.5vw;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#local-object {
+    width: 100%;
+    max-height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding-top: 1vw;
+
+    overflow-y: auto;
+}
+
+#button-plus, #button-minus, #button-multiply, #button-divide, #button-power {
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 2.5vw;
+    margin: 0.2vw;
+    margin-left: 0vw;
+
+    border-radius: 0.5vw;
+
+    background-color: #a9df81;
+    color: #000000a1;
+}
+
+#button-answer {
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 2.5vw;
+    margin: 0.2vw;
+    margin-left: 8.6vw;
+
+    border-radius: 0.5vw;
+
+    background-color: #5f5dc8;
+    color: #cacaff;
+}
+
+#button-plus:focus, #button-minus:focus, #button-multiply:focus, #button-divide:focus, #button-power:focus {
+    border-radius: 10vw;
+
+    background-color: #5f5dc8;
+    color: #cacaff;
+}
+
+#button-plus:hover, #button-minus:hover, #button-multiply:hover, #button-divide:hover, #button-power:hover {
+    border-radius: 10vw;
+
+    background-color: #5f5dc8;
+    color: #cacaff;
+}
+
+#button-answer:hover {
+    border-radius: 10vw;
+
+    background-color: #a9df81;
+    color: #000000a1;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main {
+        width: 75%;
+        height: 85%;
+        padding: 6vw;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 2vw;
+    
+        border-radius: 4vw;
+        border: 0.1vw solid white;
+    }
+
+    #name {
+        font-size: 8vw;
+        
+        letter-spacing: 0.1vw;
+        line-height: 20vw;
+    }
+
+    .buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #first-number, #second-number {
+        width: 53.4vw;
+        height: 11vw;
+        font-size: 4vw;
+    
+        border-radius: 1.5vw;
+    }
+
+    #answer-text {
+        width: 53.4vw;
+        height: 12vw;
+        margin-top: 1vw;
+        font-size: 4vw;
+        border-radius: 1.5vw;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #local-object {
+        width: 100%;
+        max-height: 50vh;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin-top: 4vw;
+
+        overflow-y: auto;
+    }
+    
+    #button-plus, #button-minus, #button-multiply, #button-divide, #button-power {
+        width: 8vw;
+        height: 8vw;
+        font-size: 8vw;
+        margin: 2.2vw;
+        margin-left: 0vw;
+    
+        border-radius: 0.5vw;
+    
+        background-color: #a9df81;
+        color: #000000a1;
+    }
+    
+    #button-answer {
+        width: 8vw;
+        height: 8vw;
+        font-size: 8vw;
+        margin: 2.2vw;
+        margin-left: 21.5vw;
+    
+        border-radius: 0.5vw;
+    
+        background-color: #5f5dc8;
+        color: #cacaff;
+    }
+    
+    #button-plus:focus, #button-minus:focus, #button-multiply:focus, #button-divide:focus, #button-power:focus {
+        border-radius: 5vw;
+    
+        background-color: #5f5dc8;
+        color: #cacaff;
+    }
+    
+    #button-plus:hover, #button-minus:hover, #button-multiply:hover, #button-divide:hover, #button-power:hover {
+        border-radius: 10vw;
+    
+        background-color: #5f5dc8;
+        color: #cacaff;
+    }
+    
+    #button-answer:hover {
+        border-radius: 10vw;
+    
+        background-color: #a9df81;
+        color: #000000a1;
+    }
+    
+}
